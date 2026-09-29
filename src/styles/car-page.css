@@ -1,0 +1,459 @@
+/* Page base and hero */
+.car-page {
+  background: var(--color-white);
+}
+
+.car-hero {
+  display: grid;
+  justify-items: center;
+  min-height: 66rem;
+  padding: 4.5rem 2.5rem 5rem;
+  text-align: center;
+}
+
+.car-hero-image {
+  width: min(64rem, 88vw);
+  height: 31rem;
+  object-fit: contain;
+}
+
+.car-hero-copy {
+  max-width: 58rem;
+}
+
+.car-hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.car-hero-copy p {
+  margin: 1.25rem auto 2rem;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.car-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.car-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17rem;
+  min-height: 3.25rem;
+  border: 1px solid var(--color-black);
+  border-radius: 0.25rem;
+  color: var(--color-black);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.car-button-primary {
+  border-color: var(--color-accent);
+  color: var(--color-white);
+  background: var(--color-accent);
+}
+
+.car-button:hover,
+.car-button:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-white);
+  background: var(--color-accent);
+}
+
+/* Performance metrics */
+.performance {
+  align-self: end;
+  width: min(66rem, 100%);
+  margin-top: 4.5rem;
+}
+
+.performance > p {
+  margin: 0 0 2rem;
+  color: var(--color-soft);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+}
+
+.performance dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+}
+
+.performance dl > div {
+  padding: 0 2rem;
+}
+
+.performance dl > div + div {
+  border-left: 1px solid var(--color-border);
+}
+
+.performance dt {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.performance dd {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+/* Road image and feature grid */
+.car-road {
+  height: 37rem;
+  margin: 0 2.5rem;
+  overflow: hidden;
+  border-radius: 0.35rem;
+}
+
+.car-road img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-grid article {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.feature-grid article + article {
+  border-left: 1px solid var(--color-border-light);
+}
+
+.feature-copy {
+  min-height: 15rem;
+  padding: 3.5rem 2.5rem 2.5rem;
+}
+
+.feature-copy h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.feature-copy p {
+  margin: 0;
+  color: var(--color-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.feature-grid article > img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+
+/* Vehicle details */
+.car-details {
+  display: grid;
+  grid-template-columns: minmax(20rem, 0.8fr) minmax(34rem, 2.2fr);
+  align-items: center;
+  gap: 3rem;
+  min-height: 58rem;
+  padding: 6rem 4rem;
+}
+
+.details-copy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.24rem;
+}
+
+.details-copy > p {
+  margin: 1.5rem 0 3rem;
+  color: var(--color-muted);
+  line-height: 2;
+}
+
+.details-copy ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.details-copy li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.details-copy li span {
+  display: grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+.detail-car {
+  position: relative;
+  min-width: 0;
+}
+
+.detail-car-image {
+  width: 100%;
+  height: 39rem;
+  object-fit: contain;
+}
+
+.hotspot {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  transform: translate(-50%, -50%);
+}
+
+.hotspot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hotspot span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+}
+
+/* Frequently asked questions */
+.faq {
+  width: min(73rem, calc(100% - 5rem));
+  margin: 0 auto;
+  padding: 2rem 0 7rem;
+}
+
+.faq header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.faq h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.faq header p {
+  margin: 0.6rem 0 0;
+  color: var(--color-soft);
+  font-family: var(--font-display);
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 5.5rem;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.05rem;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary img {
+  width: 1.5rem;
+  height: 0.75rem;
+  flex: 0 0 auto;
+  transition: transform 180ms ease;
+}
+
+.faq details[open] summary img {
+  transform: rotate(180deg);
+}
+
+.faq details > p {
+  max-width: 52rem;
+  margin: -0.5rem 0 2rem;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+/* Responsive adjustments */
+@media (max-width: 64rem) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-grid article:nth-child(3) {
+    border-left: 0;
+  }
+
+  .car-details {
+    grid-template-columns: 1fr;
+  }
+
+  .details-copy {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .car-hero {
+    min-height: auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .car-hero-image {
+    width: 115%;
+    height: 19rem;
+  }
+
+  .car-hero h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+
+  .car-hero-copy p {
+    font-size: 1rem;
+  }
+
+  .car-button {
+    width: 50%;
+  }
+
+  .performance {
+    margin-top: 4rem;
+  }
+
+  .performance dl > div {
+    padding: 0 0.75rem;
+  }
+
+  .performance dt {
+    font-size: clamp(1.35rem, 6vw, 2rem);
+  }
+
+  .performance dd {
+    font-size: 0.68rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .car-road {
+    height: 25rem;
+    margin: 0 1.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid article + article {
+    border-top: 1px solid var(--color-border-light);
+    border-left: 0;
+  }
+
+  .feature-copy {
+    min-height: auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .feature-grid article > img {
+    height: 19rem;
+  }
+
+  .car-details {
+    min-height: auto;
+    padding: 5rem 1.5rem;
+  }
+
+  .details-copy ul {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-car-image {
+    height: 24rem;
+  }
+
+  .faq {
+    width: calc(100% - 3rem);
+    padding-bottom: 5rem;
+  }
+
+  .faq summary {
+    min-height: 5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .car-actions {
+    flex-direction: column;
+  }
+
+  .car-button {
+    width: 100%;
+  }
+
+  .performance dl {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .performance dl > div + div {
+    border-top: 1px solid var(--color-border);
+    border-left: 0;
+    padding-top: 2rem;
+  }
+}
+

@@ -1,0 +1,25 @@
+:root {
+  --color-accent: #e51837;
+  --color-ink: #1a1a1a;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-muted: #666666;
+  --color-soft: #979797;
+  --color-border: #d8d8d8;
+  --color-border-light: #e8e8e8;
+  --color-border-mid: #d3d0d0;
+  --color-border-dark: #bcbcbc;
+
+  --font-display: 'Genos', sans-serif;
+  --font-body: 'Host Grotesk', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-hero: 4.5rem;
+
+  --content-width: 90rem;
+}
